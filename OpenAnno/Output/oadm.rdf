@@ -1,0 +1,37 @@
+<rdf:RDF
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:anno="http://www.example.org/annotations/"
+    xmlns:dbpr="http://dbpedia.org/resource/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:trig="http://www.w3.org/2004/03/trix/rdfg-1/"
+    xmlns:ind="http://www.example.org/individuals/"
+    xmlns:oa="http://www.w3.org/ns/oa#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:dctypes="http://purl.org/dc/dcmitype/"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:cnt="http://www.w3.org/2011/content#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:agent="http://www.example.org/agents/"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#" > 
+  <rdf:Description rdf:about="http://www.example.org/agents/b4bb4141-052f-4440-b2db-ac63cafbe85f">
+    <rdf:Type rdf:resource="http://www.w3.org/ns/prov#SoftwareAgent"/>
+    <foaf:name>OpenAnno 0.4b</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/agents/3cf6317b-b454-4ce3-be5f-a7a5be654a5f">
+    <rdf:Type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <foaf:name>FZI</foaf:name>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.example.org/annotations/7d9a1cc9-66f5-4e6e-a968-72012b3f0790">
+    <rdf:type rdf:resource="http://www.w3.org/ns/oa#Annotation"/>
+    <oa:serializedBy rdf:resource="http://www.example.org/agents/b4bb4141-052f-4440-b2db-ac63cafbe85f"/>
+    <oa:serializedAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-10-02T13:36:05.559Z</oa:serializedAt>
+    <oa:annotatedBy rdf:resource="http://www.example.org/agents/3cf6317b-b454-4ce3-be5f-a7a5be654a5f"/>
+    <oa:annotatedAt rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2015-10-02T13:32:52.565Z</oa:annotatedAt>
+    <oa:motivatedBy rdf:resource="http://www.w3.org/ns/oa#editing"/>
+    <oa:hasTarget rdf:resource="http://www.example.org/individuals/Lupa_Capitolina"/>
+    <oa:hasBody rdf:resource="http://dbpedia.org/resource/Capitoline_Wolf"/>
+    <oa:hasBody rdf:resource="http://dbpedia.org/resource/Seated_Yucatan_Woman"/>
+  </rdf:Description>
+</rdf:RDF>

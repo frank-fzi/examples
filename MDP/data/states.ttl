@@ -1,0 +1,184 @@
+# baseURI: file:/C:/_repos/promotion/work/mdp/data/states.ttl
+# imports: file:/C:/_repos/promotion/work/mdp/data/schema.ttl
+
+@prefix ex: <http://example.org/schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix quantity: <http://qudt.org/vocab/quantity/> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<file:///C:/_repos/promotion/work/mdp/data/states.ttl>
+  rdf:type owl:Ontology ;
+  owl:imports <file:///C:/_repos/promotion/work/mdp/data/schema.ttl> ;
+  owl:imports <http://qudt.org/2.0/vocab/unit/light> ;
+.
+<file:/C:/_repos/promotion/work/mdp/data/states.ttl>
+  rdf:type owl:Ontology ;
+  owl:imports <file:/C:/_repos/promotion/work/mdp/data/schema.ttl> ;
+.
+ex:State1
+  rdf:type owl:NamedIndividual ;
+  <http://example.org/schema#length.in> 65.2 ;
+  <http://example.org/schema#temp.degF> 100.3 ;
+  <http://example.org/schema#weight.lbm> 53.3 ;
+  rdfs:comment "quantity other than base or target [quantity.unit = float]"@en ;
+  rdfs:label "State 1" ;
+.
+ex:State2
+  rdf:type owl:NamedIndividual ;
+  ex:length "75.2 in" ;
+  ex:temp "70 °F" ;
+  ex:weight "51.3 lbm" ;
+  rdfs:comment "quantity other than base or target [quantity = \"float unit\"]"@en ;
+  rdfs:label "State 2" ;
+.
+ex:State3
+  rdf:type owl:NamedIndividual ;
+  qudt:hasQuantity <http://example.org/schema#State3.length> ;
+  qudt:hasQuantity <http://example.org/schema#State3.temp> ;
+  qudt:hasQuantity <http://example.org/schema#State3.weight> ;
+  rdfs:comment "quantity other than base or target in QUDT"@en ;
+  rdfs:label "State 3" ;
+.
+<http://example.org/schema#State3.length>
+  rdf:type qudt:Quantity ;
+  ex:rangeQuantity qudt:LengthUnit ;
+  qudt:hasQuantityKind quantitykind:Length ;
+  qudt:quantityValue [
+      rdf:type qudt:QuantityValue ;
+      qudt:numericValue 65.2 ;
+      qudt:unit unit:IN ;
+    ] ;
+.
+<http://example.org/schema#State3.temp>
+  rdf:type qudt:Quantity ;
+  ex:rangeQuantity qudt:TemperatureUnit ;
+  qudt:hasQuantityKind quantity:ThermodynamicTemperature ;
+  qudt:quantityValue [
+      rdf:type qudt:QuantityValue ;
+      qudt:numericValue 100.3 ;
+      qudt:unit unit:DEG_F ;
+    ] ;
+.
+<http://example.org/schema#State3.weight>
+  rdf:type qudt:Quantity ;
+  ex:rangeQuantity qudt:MassUnit ;
+  qudt:hasQuantityKind quantitykind:Mass ;
+  qudt:quantityValue [
+      rdf:type qudt:QuantityValue ;
+      qudt:numericValue 53.3 ;
+      qudt:unit unit:LBM ;
+    ] ;
+.
+ex:State4
+  rdf:type owl:NamedIndividual ;
+  qudt:hasQuantity <http://example.org/schema#State4.length> ;
+  qudt:hasQuantity <http://example.org/schema#State4.temp> ;
+  qudt:hasQuantity <http://example.org/schema#State4.weight> ;
+  rdfs:comment "base unit quantity in QUDT"@en ;
+  rdfs:label "State 4" ;
+.
+<http://example.org/schema#State4.length>
+  rdf:type qudt:Quantity ;
+  ex:rangeQuantity qudt:LengthUnit ;
+  qudt:hasQuantityKind quantitykind:Length ;
+  qudt:quantityValue [
+      rdf:type qudt:QuantityValue ;
+      qudt:numericValue 3.7 ;
+      qudt:unit unit:M ;
+    ] ;
+.
+<http://example.org/schema#State4.temp>
+  rdf:type qudt:Quantity ;
+  ex:rangeQuantity qudt:TemperatureUnit ;
+  qudt:hasQuantityKind quantity:ThermodynamicTemperature ;
+  qudt:quantityValue [
+      rdf:type qudt:QuantityValue ;
+      qudt:numericValue 280.3 ;
+      qudt:unit unit:K ;
+    ] ;
+.
+<http://example.org/schema#State4.weight>
+  rdf:type qudt:Quantity ;
+  ex:rangeQuantity qudt:MassUnit ;
+  qudt:hasQuantityKind quantitykind:Mass ;
+  qudt:quantityValue [
+      rdf:type qudt:QuantityValue ;
+      qudt:numericValue 54.2 ;
+      qudt:unit unit:KG ;
+    ] ;
+.
+ex:State5
+  rdf:type owl:NamedIndividual ;
+  qudt:hasQuantity <http://example.org/schema#State5.length> ;
+  qudt:hasQuantity <http://example.org/schema#State5.temp> ;
+  qudt:hasQuantity <http://example.org/schema#State5.weight> ;
+  rdfs:comment "target unit for quantity in QUDT"@en ;
+  rdfs:label "State 5" ;
+.
+<http://example.org/schema#State5.length>
+  rdf:type qudt:Quantity ;
+  ex:rangeQuantity qudt:LengthUnit ;
+  qudt:hasQuantityKind quantitykind:Length ;
+  qudt:quantityValue [
+      rdf:type qudt:QuantityValue ;
+      qudt:numericValue 512 ;
+      qudt:unit unit:MilliM ;
+    ] ;
+.
+<http://example.org/schema#State5.temp>
+  rdf:type qudt:Quantity ;
+  ex:rangeQuantity qudt:TemperatureUnit ;
+  qudt:hasQuantityKind quantity:ThermodynamicTemperature ;
+  qudt:quantityValue [
+      rdf:type qudt:QuantityValue ;
+      qudt:numericValue 37.2 ;
+      qudt:unit unit:DEG_C ;
+    ] ;
+.
+<http://example.org/schema#State5.weight>
+  rdf:type qudt:Quantity ;
+  ex:rangeQuantity qudt:MassUnit ;
+  qudt:hasQuantityKind quantitykind:Mass ;
+  qudt:quantityValue [
+      rdf:type qudt:QuantityValue ;
+      qudt:numericValue 5280 ;
+      qudt:unit unit:GRAM ;
+    ] ;
+.
+ex:State6
+  rdf:type owl:NamedIndividual ;
+  <http://example.org/schema#length.m> 1052 ;
+  <http://example.org/schema#temp.K> 280.6 ;
+  <http://example.org/schema#weight.kg> 68.3 ;
+  rdfs:comment "base quantity [quantity.unit = float]"@en ;
+  rdfs:label "State 6" ;
+.
+ex:State7
+  rdf:type owl:NamedIndividual ;
+  ex:length "75.2 m" ;
+  ex:temp "70 K" ;
+  ex:weight "51.3 kg" ;
+  rdfs:comment "base quantity [quantity = \"float unit\"]"@en ;
+  rdfs:label "State 7" ;
+.
+ex:State8
+  rdf:type owl:NamedIndividual ;
+  <http://example.org/schema#length.mm> 1052 ;
+  <http://example.org/schema#temp.degC> 21.3 ;
+  <http://example.org/schema#weight.g> 6812 ;
+  rdfs:comment "target quantity [quantity.unit = float]"@en ;
+  rdfs:label "State 8" ;
+.
+ex:State9
+  rdf:type owl:NamedIndividual ;
+  ex:length "752 mm" ;
+  ex:temp "37.4 °C" ;
+  ex:weight "513 g" ;
+  rdfs:comment "target quantity [quantity = \"float unit\"]"@en ;
+  rdfs:label "State 9" ;
+.

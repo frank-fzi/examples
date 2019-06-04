@@ -1,0 +1,89 @@
+<rdf:RDF
+    xmlns:ov="http://open.vocab.org/terms/"
+    xmlns:sdmxdim="http://purl.org/linked-data/sdmx/2009/dimension#"
+    xmlns:fn="http://www.w3.org/2005/xpath-functions#"
+    xmlns:oo="http://purl.org/openorg/"
+    xmlns:org="http://www.w3.org/ns/org#"
+    xmlns:aiiso="http://purl.org/vocab/aiiso/schema#"
+    xmlns:xtypes="http://purl.org/xtypes/"
+    xmlns:sd="http://www.w3.org/ns/sparql-service-description#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:afn="http://jena.hpl.hp.com/ARQ/function#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:doap="http://usefulinc.com/ns/doap#"
+    xmlns:pf="http://jena.hpl.hp.com/ARQ/property#"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+    xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:dcat="http://www.w3.org/ns/dcat#"
+    xmlns:srx="http://www.w3.org/2005/sparql-results#"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:time="http://www.w3.org/2006/time#"
+    xmlns:fhs="http://vocab.ox.ac.uk/fhs/"
+    xmlns:void="http://rdfs.org/ns/void#"
+    xmlns:sioc="http://rdfs.org/sioc/ns#"
+    xmlns:oxp="http://ns.ox.ac.uk/namespace/oxpoints/2009/02/owl#"
+    xmlns:v="http://www.w3.org/2006/vcard/ns#"
+    xmlns:crm="http://purl.org/NET/crm-owl#"
+    xmlns:cc="http://creativecommons.org/ns#"
+    xmlns:gr="http://purl.org/goodrelations/v1#"
+    xmlns:owl="http://www.w3.org/2002/07/owl#"
+    xmlns:qb="http://purl.org/linked-data/cube#"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:rooms="http://vocab.deri.ie/rooms#"
+    xmlns:claros="http://purl.org/NET/Claros/vocab#" > 
+  <rdf:Description rdf:nodeID="A0">
+    <rdfs:label>Rnjak, D. (éd.) Anticki teatar na tlu Jugoslavije (Antique Theater in the Territory of Yugoslavia) (1979) 107 n° 81 (ill.)</rdfs:label>
+    <rdf:type rdf:resource="http://purl.org/NET/crm-owl#E31_Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.clarosnet.org/doc/?uri=http%3A%2F%2Fwww.mae.u-paris10.fr%2Flimc-france%2FLIMC-objet.php%3Fcode_objet%3DFR%2FAN%2FYU04073&amp;format=ttl">
+    <dcterms:title>Turtle description of LIMC-France 12931, Musée de Srem 1214</dcterms:title>
+    <dc:format>text/turtle</dc:format>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.clarosnet.org/doc/?uri=http%3A%2F%2Fwww.mae.u-paris10.fr%2Flimc-france%2FLIMC-objet.php%3Fcode_objet%3DFR%2FAN%2FYU04073">
+    <foaf:primaryTopic rdf:resource="http://www.mae.u-paris10.fr/limc-france/LIMC-objet.php?code_objet=FR/AN/YU04073"/>
+    <dcterms:title>Description of LIMC-France 12931, Musée de Srem 1214</dcterms:title>
+    <dcterms:hasFormat rdf:resource="http://data.clarosnet.org/doc/?uri=http%3A%2F%2Fwww.mae.u-paris10.fr%2Flimc-france%2FLIMC-objet.php%3Fcode_objet%3DFR%2FAN%2FYU04073&amp;format=ttl"/>
+    <dcterms:hasFormat rdf:resource="http://data.clarosnet.org/doc/?uri=http%3A%2F%2Fwww.mae.u-paris10.fr%2Flimc-france%2FLIMC-objet.php%3Fcode_objet%3DFR%2FAN%2FYU04073&amp;format=rdf"/>
+    <dcterms:hasFormat rdf:resource="http://data.clarosnet.org/doc/?uri=http%3A%2F%2Fwww.mae.u-paris10.fr%2Flimc-france%2FLIMC-objet.php%3Fcode_objet%3DFR%2FAN%2FYU04073&amp;format=nt"/>
+    <dcterms:hasFormat rdf:resource="http://data.clarosnet.org/doc/?uri=http%3A%2F%2Fwww.mae.u-paris10.fr%2Flimc-france%2FLIMC-objet.php%3Fcode_objet%3DFR%2FAN%2FYU04073&amp;format=n3"/>
+    <dcterms:hasFormat rdf:resource="http://data.clarosnet.org/doc/?uri=http%3A%2F%2Fwww.mae.u-paris10.fr%2Flimc-france%2FLIMC-objet.php%3Fcode_objet%3DFR%2FAN%2FYU04073&amp;format=html"/>
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Document"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.clarosnet.org/doc/?uri=http%3A%2F%2Fwww.mae.u-paris10.fr%2Flimc-france%2FLIMC-objet.php%3Fcode_objet%3DFR%2FAN%2FYU04073&amp;format=nt">
+    <dcterms:title>NTriples description of LIMC-France 12931, Musée de Srem 1214</dcterms:title>
+    <dc:format>text/plain</dc:format>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.clarosnet.org/doc/?uri=http%3A%2F%2Fwww.mae.u-paris10.fr%2Flimc-france%2FLIMC-objet.php%3Fcode_objet%3DFR%2FAN%2FYU04073&amp;format=n3">
+    <dcterms:title>Notation3 description of LIMC-France 12931, Musée de Srem 1214</dcterms:title>
+    <dc:format>text/n3</dc:format>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://www.mae.u-paris10.fr/limc-france/LIMC-objet.php?code_objet=FR/AN/YU04073">
+    <crm:P67i_is_referred_to_by rdf:nodeID="A0"/>
+    <crm:P2_has_type rdf:resource="http://id.clarosnet.org/vocab/LIMC/Domaine/sculpture_in_the_round"/>
+    <rdf:type rdf:resource="http://purl.org/NET/crm-owl#E22_Man-Made_Object"/>
+    <crm:P111i_was_added_by rdf:resource="http://www.mae.u-paris10.fr/limc-france/LIMC-objet.php?code_objet=FR/AN/YU04073/part_addition/2"/>
+    <crm:P108i_was_produced_by rdf:resource="http://www.mae.u-paris10.fr/limc-france/LIMC-objet.php?code_objet=FR/AN/YU04073/production"/>
+    <crm:P53_has_former_or_current_location rdf:resource="http://id.clarosnet.org/places/limc/place/musée-de-srem"/>
+    <crm:P48_has_preferred_identifier rdf:resource="http://www.mae.u-paris10.fr/limc-france/LIMC-objet.php?code_objet=FR/AN/YU04073/identifier"/>
+    <crm:P111i_was_added_by rdf:resource="http://www.mae.u-paris10.fr/limc-france/LIMC-objet.php?code_objet=FR/AN/YU04073/part_addition/1"/>
+    <crm:P41i_was_classified_by>
+  </crm:P41i_was_classified_by>
+    <rdfs:label>LIMC-France 12931, Musée de Srem 1214</rdfs:label>
+    <crm:P2_has_type rdf:resource="http://id.clarosnet.org/type/object/statuette"/>
+    <crm:P102_has_title rdf:resource="http://www.mae.u-paris10.fr/limc-france/LIMC-objet.php?code_objet=FR/AN/YU04073/title"/>
+    <crm:P2_has_type rdf:resource="http://id.clarosnet.org/vocab/LIMC/Support/statuette"/>
+    <crm:P70i_is_documented_in rdf:resource="http://www.mae.u-paris10.fr/limc-france/LIMC-objet.php?code_objet=FR/AN/YU04073"/>
+    <crm:P2_has_type rdf:resource="http://id.clarosnet.org/type/object/statue"/>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.clarosnet.org/doc/?uri=http%3A%2F%2Fwww.mae.u-paris10.fr%2Flimc-france%2FLIMC-objet.php%3Fcode_objet%3DFR%2FAN%2FYU04073&amp;format=rdf">
+    <dcterms:title>RDF/XML description of LIMC-France 12931, Musée de Srem 1214</dcterms:title>
+    <dc:format>application/rdf+xml</dc:format>
+  </rdf:Description>
+  <rdf:Description rdf:about="http://data.clarosnet.org/doc/?uri=http%3A%2F%2Fwww.mae.u-paris10.fr%2Flimc-france%2FLIMC-objet.php%3Fcode_objet%3DFR%2FAN%2FYU04073&amp;format=html">
+    <dcterms:title>HTML description of LIMC-France 12931, Musée de Srem 1214</dcterms:title>
+    <dc:format>text/html</dc:format>
+    <dc:format>application/xhtml+xml</dc:format>
+  </rdf:Description>
+</rdf:RDF>

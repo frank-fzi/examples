@@ -1,0 +1,37 @@
+<rdf:RDF
+    xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+    xmlns:ind="http://www.example.org/individuals/"
+    xmlns:anno="http://www.example.org/annotations/"
+    xmlns:agent="http://www.example.org/agents/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:prov="http://www.w3.org/ns/prov#"
+    xmlns:dbpr="http://dbpedia.org/resource/"
+    xmlns:oa="http://www.w3.org/ns/oa#"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:foaf="http://xmlns.com/foaf/0.1/"
+    xmlns:dcterms="http://purl.org/dc/terms/"
+    xmlns:trig="http://www.w3.org/2004/03/trix/rdfg-1/"
+    xmlns:dctypes="http://purl.org/dc/dcmitype/"
+    xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+    xmlns:cnt="http://www.w3.org/2011/content#" > 
+
+  <rdf:Description rdf:about="http://www.example.org/agents/5f0e5128-459d-4643-a70e-111f7a42539a">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Homer S.</foaf:name>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://www.example.org/agents/5f0e5128-459d-4643-a70e-111f7a42539b">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Boris B.</foaf:name>
+  </rdf:Description>
+  
+  <rdf:Description rdf:about="http://www.example.org/agents/5f0e5128-459d-4643-a70e-111f7a42539c">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Organization"/>
+    <foaf:name>FZI</foaf:name>
+  </rdf:Description>
+  
+   <rdf:Description rdf:about="http://www.example.org/agents/5f0e5128-459d-4643-a70e-111f7a42539d">
+    <rdf:type rdf:resource="http://xmlns.com/foaf/0.1/Person"/>
+    <foaf:name>Angela M.</foaf:name>
+  </rdf:Description>
+</rdf:RDF>

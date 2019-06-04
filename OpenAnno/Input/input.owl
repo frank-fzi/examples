@@ -1,0 +1,152 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY cidoc-crm "http://www.cidoc-crm.org/cidoc-crm/" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY ont "http://www.example.org/individuals/" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:ont="http://www.example.org/individuals/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:cidoc-crm="http://www.cidoc-crm.org/cidoc-crm/">
+	 
+	 
+	<!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <Thing rdf:about="&ont;ironExample">
+        <cidoc-crm:P45_consists_of rdf:resource="http://dbpedia.org/resource/Iron"/>
+    </Thing>  
+	
+	<Thing rdf:about="&ont;copperExample">
+        <cidoc-crm:P45_consists_of rdf:resource="http://dbpedia.org/resource/Copper"/>
+    </Thing>  
+	
+	<Thing rdf:about="http://data.cycladic.gr/artifact/1108">
+ 
+    </Thing>  
+	<!--
+	http://data.cycladic.gr/artifact/1108
+http://data.cycladic.gr/artifact/905
+http://data.cycladic.gr/artifact/840
+http://data.cycladic.gr/artifact/842
+http://data.cycladic.gr/artifact/841
+http://data.cycladic.gr/artifact/907
+http://data.cycladic.gr/artifact/916
+http://data.cycladic.gr/artifact/919
+http://data.cycladic.gr/artifact/887
+http://data.cycladic.gr/artifact/888
+-->
+
+    <!-- http://www.example.org/individuals/Lupa_Capitolina -->
+
+    <cidoc-crm:E22_Man-Made_Object rdf:about="&ont;Lupa_Capitolina">
+        <rdf:type rdf:resource="#Thing"/>
+        <cidoc-crm:P48_has_preferred_identifier rdf:nodeID="id1" />
+        <cidoc-crm:P1_is_identified_by rdf:nodeID="id1" />
+        <cidoc-crm:P1_is_identified_by rdf:parseType="Resource">
+			<rdf:type rdf:resource="&cidoc-crm;E35_Title"/>
+			<rdfs:label xml:lang="de">Kapitolinische W&#246;lfin</rdfs:label>
+			<rdfs:label xml:lang="en">Capitoline Wolf</rdfs:label>
+			<rdfs:label xml:lang="la">Lupa Capitolina</rdfs:label>
+			<!-- <ont:E62_String rdf:datatype="&rdfs;Literal">Lupa Capitolina</ont:E62_String> -->
+			<!-- <rdfs:comment xml:lang="en">This is the title of Lupa_Capitolina. It can be labeled in multiple languages.</rdfs:comment> -->
+		</cidoc-crm:P1_is_identified_by>
+        <cidoc-crm:P45_consists_of rdf:resource="http://dbpedia.org/resource/Bronze"/>
+        <cidoc-crm:P43_has_dimension rdf:parseType="Resource">
+			<rdf:type rdf:resource="&cidoc-crm;E54_Dimension"/>
+			<cidoc-crm:P90_has_value rdf:datatype="&xsd;int">75</cidoc-crm:P90_has_value>
+			<cidoc-crm:P91_has_unit rdf:resource="http://dbpedia.org/page/Centimetre"/>
+			<cidoc-crm:P2_has_type rdf:resource="http://dbpedia.org/resource/Height"/>
+		</cidoc-crm:P43_has_dimension>
+        <cidoc-crm:P43_has_dimension rdf:parseType="Resource">
+			<rdf:type rdf:resource="&cidoc-crm;E54_Dimension"/>
+			<cidoc-crm:P90_has_value rdf:datatype="&xsd;int">114</cidoc-crm:P90_has_value>
+			<cidoc-crm:P91_has_unit rdf:resource="http://dbpedia.org/page/Centimetre"/>
+			<cidoc-crm:P2_has_type rdf:resource="http://dbpedia.org/resource/Length"/>
+		</cidoc-crm:P43_has_dimension>
+		<cidoc-crm:P50_has_current_keeper rdf:resource="http://dbpedia.org/resource/Capitoline_Museums"/>
+		
+		<!--
+        <cidoc-crm:P50_has_current_keeper rdf:resource="http://sws.geonames.org/8015030"/>
+		-->
+    </cidoc-crm:E22_Man-Made_Object> 
+
+    <Thing rdf:nodeID="id1">
+        <rdf:type rdf:resource="&cidoc-crm;E42_Identifier"/>
+        <rdfs:label xml:lang="de">Inventar Nummer</rdfs:label>
+        <rdfs:label xml:lang="en">Inventory Number</rdfs:label>
+        <ont:E62_String rdf:datatype="&rdfs;Literal">1181</ont:E62_String>
+    </Thing>   
+
+
+    <!--http://dbpedia.org/resource/Bronze -->
+
+    <Thing rdf:about="http://dbpedia.org/resource/Bronze">
+        <rdf:type rdf:resource="&cidoc-crm;E57_Material"/>
+    </Thing>
+    
+
+
+    <!-- http://dbpedia.org/page/Centimetre -->
+
+    <Thing rdf:about="http://dbpedia.org/page/Centimetre">
+        <rdf:type rdf:resource="&cidoc-crm;E58_Measurement_Unit"/>
+        <rdfs:label xml:lang="de">Zentimeter</rdfs:label>
+        <rdfs:label xml:lang="en">centimeter</rdfs:label>
+    </Thing>
+    
+
+
+    <!--http://dbpedia.org/resource/Height -->
+
+    <Thing rdf:about="http://dbpedia.org/resource/Height">
+        <rdf:type rdf:resource="&cidoc-crm;E55_Type"/>
+        <rdfs:label xml:lang="de">H&#246;he</rdfs:label>
+        <rdfs:label xml:lang="en">height</rdfs:label>
+    </Thing>
+	
+    <!-- http://dbpedia.org/resource/Length -->
+
+    <Thing rdf:about="http://dbpedia.org/resource/Length">
+        <rdf:type rdf:resource="&cidoc-crm;E55_Type"/>
+        <rdfs:label xml:lang="de">Breite</rdfs:label>
+        <rdfs:label xml:lang="en">width</rdfs:label>
+    </Thing>
+
+    <!-- http://www.w3.org/2002/07/owl#http://upload.wikimedia.org/wikipedia/commons/a/aa/Capitoline_shewolf_Musei_Capitolini_MC1181.jpg -->
+
+    <cidoc-crm:E38_Image rdf:about="http://upload.wikimedia.org/wikipedia/commons/a/aa/Capitoline_shewolf_Musei_Capitolini_MC1181.jpg">
+        <rdf:type rdf:resource="#Thing"/>
+        <cidoc-crm:P138_represents rdf:resource="&ont;Lupa_Capitolina"/>
+    </cidoc-crm:E38_Image>  
+
+    <!--http://sws.geonames.org/8015030/ -->
+
+    <cidoc-crm:E40_Legal_Body rdf:about="http://sws.geonames.org/8015030/">
+        <rdf:type rdf:resource="#Thing"/>
+    </cidoc-crm:E40_Legal_Body>
+    
+
+
+
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.0) http://owlapi.sourceforge.net -->

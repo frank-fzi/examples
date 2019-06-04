@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xml:lang="en"
+	xmlns="http://www.fzi.de/ontologies/2014/lupa#"
+    xml:base="http://www.fzi.de/ontologies/2014/lupa#"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:crm="http://www.cidoc-crm.org/rdfs/cidoc_crm_v5.1-draft-2013May.rdfs">
+
+		<crm:E22_Man-Made_Object>		
+			<crm:P1_is_identified_by>
+				<crm:E42_Identifier rdf:about="Inv.-Nr. 1181">
+				</crm:E42_Identifier>
+			</crm:P1_is_identified_by>
+			
+			<crm:P1_is_identified_by>
+				<crm:E42_Identifier rdf:about="Lupa Capitolina">
+				</crm:E42_Identifier>
+			</crm:P1_is_identified_by>
+			
+			<crm:P50_has_current_keeper>
+				<crm:E40_Legal_Body rdf:about="Musei Capitolini">
+				</crm:E40_Legal_Body>
+			</crm:P50_has_current_keeper>
+			
+			<crm:P45_consists_of>
+				<crm:E57_Material rdf:about="bronze">
+				</crm:E57_Material>
+			</crm:P45_consists_of>
+			
+			<crm:P43_has_dimension>
+	<!--		<crm:P90_has_value rdf:literal="114"></crm:P90_has_value>
+				<crm:P2_has_type>
+					<crm:E55_Type rdf:about="width">
+					</crm:E55_Type>
+				</crm:P2_has_type>
+				<crm:P91_has_unit>
+					<crm:E58_Measurement_Unit rdf:about="cm">
+					</crm:E58_Measurement_Unit>
+				</crm:P91_has_unit>
+	-->
+			</crm:P43_has_dimension>
+			
+			<crm:P43_has_dimension>
+	<!--		<crm:P90_has_value rdf:literal="75"></crm:P90_has_value>
+				<crm:P2_has_type>
+					<crm:E55_Type rdf:about="height">
+					</crm:E55_Type>
+				</crm:P2_has_type>
+				<crm:P91_has_unit>
+					<crm:E58_Measurement_Unit rdf:about="cm">
+					</crm:E58_Measurement_Unit>
+				</crm:P91_has_unit>
+	-->
+			</crm:P43_has_dimension>
+			
+			<crm:P138i_has_representation>
+				<crm:E38_Image rdf:about="http://upload.wikimedia.org/wikipedia/commons/a/aa/Capitoline_shewolf_Musei_Capitolini_MC1181.jpg">
+				</crm:E38_Image>
+			</crm:P138i_has_representation>		
+
+		</crm:E22_Man-Made_Object>
+</rdf:RDF>

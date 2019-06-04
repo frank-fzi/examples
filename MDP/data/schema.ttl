@@ -1,0 +1,122 @@
+# baseURI: file:/C:/_repos/promotion/work/mdp/data/schema.ttl
+# imports: http://qudt.org/2.0/vocab/unit/light
+
+@prefix ex: <http://example.org/schema#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix quantity: <http://qudt.org/vocab/quantity/> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+@prefix qudt: <http://qudt.org/schema/qudt/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix unit: <http://qudt.org/vocab/unit/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+<file:///C:/_repos/promotion/work/mdp/data/schema.ttl>
+  rdf:type owl:Ontology ;
+  owl:imports <http://qudt.org/2.0/vocab/unit/light> ;
+.
+<file:/C:/_repos/promotion/work/mdp/data/schema.ttl>
+  rdf:type owl:Ontology ;
+  owl:imports <http://qudt.org/2.0/vocab/unit/light> ;
+.
+ex:length
+  rdf:type owl:DatatypeProperty ;
+  ex:rangeQuantity qudt:LengthUnit ;
+  rdfs:label "length as string with any length unit, e.g. \"50 m\""@en ;
+  rdfs:subPropertyOf ex:quantity ;
+.
+<http://example.org/schema#length.in>
+  rdf:type owl:DatatypeProperty ;
+  ex:rangeQuantity qudt:LengthUnit ;
+  ex:rangeUnit unit:IN ;
+  rdfs:label "length in in as float"@en ;
+  rdfs:subPropertyOf <http://example.org/schema#quantity.unit> ;
+.
+<http://example.org/schema#length.m>
+  rdf:type owl:DatatypeProperty ;
+  ex:rangeQuantity qudt:LengthUnit ;
+  ex:rangeUnit unit:M ;
+  rdfs:label "length in m as float"@en ;
+  rdfs:subPropertyOf <http://example.org/schema#quantity.unit> ;
+.
+<http://example.org/schema#length.mm>
+  rdf:type owl:DatatypeProperty ;
+  ex:rangeQuantity qudt:LengthUnit ;
+  ex:rangeUnit unit:MilliM ;
+  rdfs:label "length in mm as float"@en ;
+  rdfs:subPropertyOf <http://example.org/schema#quantity.unit> ;
+.
+ex:quantity
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "quantity as \"decimal unit\""@en ;
+  rdfs:range xsd:string ;
+.
+<http://example.org/schema#quantity.unit>
+  rdf:type owl:DatatypeProperty ;
+  rdfs:label "quantity as quantity.unit = float"@en ;
+  rdfs:range xsd:decimal ;
+.
+ex:rangeQuantity
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "related QUDT quantity (e.g. qudt:MassUnit)" ;
+  rdfs:range owl:Class ;
+.
+ex:rangeUnit
+  rdf:type owl:ObjectProperty ;
+  rdfs:label "related QUDT unit (e.g. unit:KG)" ;
+  rdfs:range qudt:Unit ;
+.
+ex:temp
+  rdf:type owl:DatatypeProperty ;
+  ex:rangeQuantity qudt:TemperatureUnit ;
+  rdfs:label "temperature as string with any temperature unit, e.g. \"37 °C\""@en ;
+  rdfs:subPropertyOf ex:quantity ;
+.
+<http://example.org/schema#temp.K>
+  rdf:type owl:DatatypeProperty ;
+  ex:rangeQuantity qudt:TemperatureUnit ;
+  ex:rangeUnit unit:K ;
+  rdfs:label "temperature in Kelvin as float"@en ;
+  rdfs:subPropertyOf <http://example.org/schema#quantity.unit> ;
+.
+<http://example.org/schema#temp.degC>
+  rdf:type owl:DatatypeProperty ;
+  ex:rangeQuantity qudt:TemperatureUnit ;
+  ex:rangeUnit unit:DEG_C ;
+  rdfs:label "temperature in °C as float"@en ;
+  rdfs:subPropertyOf <http://example.org/schema#quantity.unit> ;
+.
+<http://example.org/schema#temp.degF>
+  rdf:type owl:DatatypeProperty ;
+  ex:rangeQuantity qudt:TemperatureUnit ;
+  ex:rangeUnit unit:DEG_F ;
+  rdfs:label "temperature in °F as float"@en ;
+  rdfs:subPropertyOf <http://example.org/schema#quantity.unit> ;
+.
+ex:weight
+  rdf:type owl:DatatypeProperty ;
+  ex:rangeQuantity qudt:MassUnit ;
+  rdfs:label "weight as string with any unit, e.g. \"50 kg\""@en ;
+  rdfs:subPropertyOf ex:quantity ;
+.
+<http://example.org/schema#weight.g>
+  rdf:type owl:DatatypeProperty ;
+  ex:rangeQuantity qudt:MassUnit ;
+  ex:rangeUnit unit:GRAM ;
+  rdfs:label "weight in g as float"@en ;
+  rdfs:subPropertyOf <http://example.org/schema#quantity.unit> ;
+.
+<http://example.org/schema#weight.kg>
+  rdf:type owl:DatatypeProperty ;
+  ex:rangeQuantity qudt:MassUnit ;
+  ex:rangeUnit unit:KG ;
+  rdfs:label "weight in kg as float"@en ;
+  rdfs:subPropertyOf <http://example.org/schema#quantity.unit> ;
+.
+<http://example.org/schema#weight.lbm>
+  rdf:type owl:DatatypeProperty ;
+  ex:rangeQuantity qudt:MassUnit ;
+  ex:rangeUnit unit:LBM ;
+  rdfs:label "weight in lbm as float"@en ;
+  rdfs:subPropertyOf <http://example.org/schema#quantity.unit> ;
+.

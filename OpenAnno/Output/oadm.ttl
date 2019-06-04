@@ -1,0 +1,34 @@
+@prefix dctypes: <http://purl.org/dc/dcmitype/> .
+@prefix agent: <http://www.example.org/agents/> .
+@prefix anno:  <http://www.example.org/annotations/> .
+@prefix cnt:   <http://www.w3.org/2011/content#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix skos:  <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix trig:  <http://www.w3.org/2004/03/trix/rdfg-1/> .
+@prefix dbpr:  <http://dbpedia.org/resource/> .
+@prefix oa:    <http://www.w3.org/ns/oa#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix prov:  <http://www.w3.org/ns/prov#> .
+@prefix foaf:  <http://xmlns.com/foaf/0.1/> .
+@prefix ind:   <http://www.example.org/individuals/> .
+@prefix dc:    <http://purl.org/dc/elements/1.1/> .
+
+agent:3cf6317b-b454-4ce3-be5f-a7a5be654a5f
+        rdf:Type   foaf:Organization ;
+        foaf:name  "FZI" .
+
+agent:b4bb4141-052f-4440-b2db-ac63cafbe85f
+        rdf:Type   prov:SoftwareAgent ;
+        foaf:name  "OpenAnno 0.4b" .
+
+anno:7d9a1cc9-66f5-4e6e-a968-72012b3f0790
+        a                oa:Annotation ;
+        oa:annotatedAt   "2015-10-02T13:32:52.565Z"^^xsd:dateTime ;
+        oa:annotatedBy   agent:3cf6317b-b454-4ce3-be5f-a7a5be654a5f ;
+        oa:hasBody       dbpr:Capitoline_Wolf , dbpr:Seated_Yucatan_Woman ;
+        oa:hasTarget     ind:Lupa_Capitolina ;
+        oa:motivatedBy   oa:editing ;
+        oa:serializedAt  "2015-10-02T13:36:05.559Z"^^xsd:dateTime ;
+        oa:serializedBy  agent:b4bb4141-052f-4440-b2db-ac63cafbe85f .
