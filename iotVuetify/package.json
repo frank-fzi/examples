@@ -14,7 +14,7 @@
     "cordova-serve-ios": "vue-cli-service cordova-serve-ios"
   },
   "dependencies": {
-    "axios": "^0.19.0",
+    "axios": "^0.21.1",
     "gm": "^1.23.1",
     "jimp": "^0.5.6",
     "request": "^2.88.0",
