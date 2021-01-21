@@ -18,7 +18,7 @@
     "gm": "^1.23.1",
     "jimp": "^0.5.6",
     "request": "^2.88.0",
-    "socket.io": "^2.1.1",
+    "socket.io": "^2.4.0",
     "uws": "^99.0.0",
     "vue": "^2.5.17",
     "vue-native-websocket": "^2.0.12",
